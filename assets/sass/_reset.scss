@@ -1,0 +1,179 @@
+/* global reset - start
+================================================== */
+body {
+	margin: 0px;
+	padding: 0px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.65;
+	font-style: normal;
+	color: $default_color;
+	font-family: $body_font;
+	text-rendering: optimizelegibility;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+.body_wrap {
+	overflow: hidden;
+	position: relative;
+}
+
+::selection {
+	color: #ffffff;
+	background-color: $default_brown;
+}
+::-moz-selection {
+	color: #ffffff;
+	background-color: $default_brown;
+}
+
+.container {
+	max-width: 1200px;
+}
+.container_boxed {
+	padding: 60px;
+	max-width: 1290px;
+	background-color: #ffffff;
+}
+.maxw_1560 {
+	max-width: 1590px;
+}
+.maxw_1720 {
+	max-width: 1750px;
+}
+
+iframe {
+	border: none;
+}
+
+a:focus,
+a:active,
+input,
+input:hover,
+input:focus,
+input:active,
+textarea,
+textarea:hover,
+textarea:focus,
+textarea:active {
+	outline: none;
+}
+
+img:not([draggable]),
+embed,
+object,
+video {
+	height: auto;
+	max-width: 100%;
+}
+img {
+	border: none;
+	max-width: 100%;
+	vertical-align: middle;
+	user-select: none;
+	height: auto;
+}
+
+a {
+	outline: 0;
+	display: inline-block;
+	text-decoration: none;
+	&:active,
+	&:focus,
+	&:hover,
+	&:visited {
+		outline: 0;
+		text-decoration: none;
+	}
+}
+
+button {
+	padding: 0px;
+	border: none;
+	outline: none;
+	background: none;
+	display: inline-block;
+	&:focus {
+		outline: none;
+	}
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: 700;
+	color: $default_black;
+	font-family: $heading_font;
+}
+
+/* section decoration wrap - start */
+.deco_wrap {
+	z-index: 1;
+	position: relative;
+	.deco_item {
+		z-index: -1;
+		position: absolute;
+	}
+
+	.deco_big_text {
+		top: 170px;
+		left: 0px;
+		right: 0px;
+		z-index: -1;
+		opacity: .2;
+		color: #000000;
+		line-height: 1;
+		display: block;
+		font-weight: 700;
+		font-size: 291px;
+		position: absolute;
+		font-family: $heading_font;
+	}
+
+	.overlay {
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		z-index: -1;
+		position: absolute;
+	}
+
+
+	.scratch {
+		left: 0px;
+		right: 0px;
+		z-index: 1;
+		position: absolute;
+		img {
+			width: 100%;
+			display: block;
+		}
+	}
+	.scratch_top {
+		top: 0px;
+	}
+	.scratch_bottom {
+		bottom: 0px;
+	}
+}
+/* section decoration wrap - end */
+
+/* spacing settings - start */
+.sec_ptb_120 {
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+.sec_ptb_80 {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+/* spacing settings - end */
+
+/* transition - start */
+a,
+button {
+	transition: $default_transition;
+}
+/* transition - end */
+/* global reset - end
+================================================== */

@@ -1,0 +1,142 @@
+/* about section - start
+================================================== */
+.about_image1 {
+	position: relative;
+	.year_content_wrap {
+		top: 50%;
+		left: 50%;
+		width: 248px;
+		height: 228px;
+		display: flex;
+		padding: 15px;
+		color: #ffffff;
+		position: absolute;
+		align-items: center;
+		background-size: auto;
+		justify-content: center;
+		background-repeat: no-repeat;
+		transform: translate(-50%, -50%);
+		background-position: center center;
+		span,strong {
+			line-height: 1;
+			display: block;
+		}
+		span {
+			font-size: 45px;
+			font-weight: 700;
+			margin-bottom: 10px;
+			color: $default_brown;
+			font-family: $heading_font;
+			small {
+				color: #ffffff;
+				font-size: 15px;
+				font-weight: 500;
+			}
+		}
+		strong {
+			font-size: 24px;
+		}
+	}
+}
+
+.about_image2 {
+	position: relative;
+	padding-left: 40px;
+	.year_content_wrap {
+		top: 75px;
+		left: 0px;
+		z-index: 1;
+		position: absolute;
+		span,strong {
+			line-height: 1;
+			display: block;
+		}
+		span {
+			font-size: 24px;
+			font-weight: 700;
+			margin-bottom: 10px;
+			color: $default_black;
+			font-family: $heading_font;
+		}
+		strong {
+			color: #ffffff;
+			line-height: 1;
+			font-size: 126px;
+			font-weight: bold;
+			font-family: $heading_font;
+			text-shadow: 0px 15px 21px rgba(84, 49, 55, 0.25);
+		}
+	}
+	.leaf_image {
+		bottom: 55px;
+		right: -100px;
+		position: absolute;
+	}
+}
+
+.about_content {
+	.section_title {
+		margin-bottom: 30px;
+	}
+	p {
+		margin-bottom: 30px;
+	}
+	.about_info {
+		margin-bottom: 35px;
+		li {
+			&:not(:last-child) {
+				margin-bottom: 25px;
+			}
+		}
+		h4 {
+			font-size: 15px;
+			margin-bottom: 10px;
+			font-family: $body_font;
+			i {
+				margin-right: 10px;
+			}
+		}
+	}
+	.btns_group {
+		li {
+			&:not(:last-child) {
+				margin-right: 60px;
+			}
+		}
+	}
+}
+
+.our_history_area {
+	padding: 60px 0px;
+	border-bottom: 1px solid #f7f7f7;
+	.item_icon {
+		z-index: 1;
+		width: 72px;
+		height: 72px;
+		display: flex;
+		margin: 0px auto;
+		position: relative;
+		align-items: center;
+		justify-content: center;
+		.bg_shape {
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+			z-index: -1;
+			position: absolute;
+			transform: rotate(45deg);
+			background-color: #ffffff;
+			box-shadow: 0px 4px 16px 0px rgba(179, 179, 179, 0.25);
+		}
+	}
+	.item_title {
+		line-height: 1;
+		font-size: 45px;
+		font-weight: 700;
+		text-align: right;
+		margin-bottom: 0px;
+	}
+}
+/* about section - end
+================================================== */

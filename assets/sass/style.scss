@@ -1,0 +1,60 @@
+/* table of content - start
+================================================== */
+/* 
+Project Name   :  Cafenod - HTML5 Template
+File           :  CSS Base
+Version        :  1.0.0
+Last change    :  27 March 2021
+Author         :  Xpressrow
+*/
+/* table of content - end
+================================================== */
+
+// template global settings
+@import 'variable';
+@import 'fonts';
+@import 'mixin';
+@import 'reset';
+
+// template elements
+@import 'elements/backtotop';
+@import 'elements/preloader';
+@import 'elements/button';
+@import 'elements/list';
+@import 'elements/social';
+@import 'elements/title';
+@import 'elements/color';
+@import 'elements/carousel';
+@import 'elements/chips';
+@import 'elements/form';
+@import 'elements/rating';
+@import 'elements/pagination';
+@import 'elements/filterNav';
+@import 'elements/tags';
+@import 'elements/meta';
+@import 'elements/comment';
+@import 'elements/sidebar';
+
+// template components
+@import 'components/header';
+@import 'components/footer';
+@import 'components/breadcrumb';
+@import 'components/sliderDark';
+@import 'components/sliderLight';
+@import 'components/bannerSection';
+@import 'components/featurePrimary';
+@import 'components/aboutSection';
+@import 'components/adminSection';
+@import 'components/recipeMenu';
+@import 'components/offerSection';
+@import 'components/testimonial';
+@import 'components/shop';
+@import 'components/blog';
+@import 'components/details';
+@import 'components/gallery';
+@import 'components/cart';
+@import 'components/checkout';
+@import 'components/faq';
+
+// template responsive
+@import 'responsive';

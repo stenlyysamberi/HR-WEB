@@ -1,0 +1,22 @@
+/* section title - start
+================================================== */
+.section_title {
+  margin-bottom: 50px;
+  .small_title {
+    line-height: 1;
+    font-size: 14px;
+    margin-bottom: 18px;
+    font-family: $body_font;
+    i {
+      margin-right: 10px;
+      color: $default_brown;
+    }
+  }
+  .big_title {
+    font-size: 45px;
+    line-height: 1.2;
+    margin-bottom: 0px;
+  }
+}
+/* section title - end
+================================================== */

@@ -1,0 +1,234 @@
+/* offer section - start
+================================================== */
+.offer_video {
+	display: flex;
+	overflow: hidden;
+	object-fit: cover;
+	position: relative;
+	.overlay {
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		z-index: 1;
+		bottom: 0px;
+		position: absolute;
+		background-color: rgba(0, 0, 0, 0.6);
+	}
+	img {
+		transition: $default_transition;
+	}
+	&:hover {
+		img {
+			transform: scale(1.05);
+		}
+	}
+	.video_btn2 {
+		top: 50%;
+		left: 50%;
+		z-index: 2;
+		position: absolute;
+		transform: translate(-50%, -50%);
+	}
+}
+
+.offer_area {
+	display: flex;
+	padding: 70px;
+	align-items: center;
+	justify-content: space-between;
+	&.bg_gray {
+		background-color: #f3f3f3;
+	}
+	.offer_image {
+		order: 13;
+	}
+	.offer_content {
+		max-width: 460px;
+	}
+	p {
+		margin-bottom: 25px;
+	}
+}
+
+.offer_info_item {
+	padding: 50px 70px;
+	@include bg-image-property;
+	.offer_info_title {
+		font-size: 22px;
+		font-weight: 600;
+		margin-bottom: 35px;
+	}
+}
+
+.table_reservation_contact {
+	background-color: #eceae3;
+	ul {
+		margin-bottom: 30px;
+	}
+	li {
+		display: flex;
+		align-items: center;
+		&:not(:last-child) {
+			margin-bottom: 16px;
+		}
+	}
+	.item_icon {
+		width: 40px;
+		height: 40px;
+		margin-right: 16px;
+		border-radius: 3px;
+		align-items: center;
+		display: inline-flex;
+		color: $default_brown;
+		justify-content: center;
+		background-color: rgb(255, 255, 255);
+		box-shadow: 1.753px 3.595px 15px 0px rgba(144, 126, 107, 0.21);
+	}
+	.item_content {
+		span {
+			display: block;
+			font-weight: 500;
+			color: $default_black;
+		}
+	}
+}
+
+.opening_time {
+	li {
+		font-weight: 500;
+		&:not(:last-child) {
+			margin-bottom: 15.8px;
+		}
+	}
+	span {
+		float: right;
+		color: #c7a17a;
+	}
+}
+
+.friday_offer {
+	padding: 50px 20px;
+	padding-bottom: 0px;
+	background-color: #eceae3;
+	.offer_info_title {
+		margin-bottom: 58px;
+	}
+}
+
+/* it's in shop page - start */
+.shop_offer_banner {
+	padding: 80px;
+	min-height: 460px;
+	.item_title {
+		line-height: 1;
+		font-size: 35px;
+		margin-bottom: 20px;
+	}
+	.discount_percentage {
+		display: block;
+		line-height: 1;
+		font-size: 100px;
+		font-weight: 700;
+		color: transparent;
+		margin-bottom: 30px;
+		font-family: $heading_font;
+		-webkit-text-fill-color: transparent;
+		-webkit-text-stroke-width: 2px;
+		-webkit-text-stroke-color: #ffffff;
+	}
+	p {
+		line-height: 1;
+		font-size: 20px;
+		margin-bottom: 0px;
+	}
+}
+/* it's in shop page - end */
+
+/* shop filter bar - start */
+.shop_filter_bar {
+	padding: 45px 50px;
+	margin-bottom: 60px;
+	background-color: #ffffff;
+	.item_title {
+		font-size: 15px;
+		margin-right: 30px;
+		margin-bottom: 0px;
+	}
+}
+/* shop filter bar - end */
+
+/* pricing range - start */
+.pricing_range {
+	display: flex;
+	padding-right: 30px;
+	align-items: flex-start;
+	.price-range-area {
+		width: 330px;
+		padding-top: 5px;
+		.slider-range {
+			height: 8px;
+			border: none;
+			border-radius: 0px;
+			background-color: #f6f6f6;
+		}
+		.ui-slider-range {
+			border: none;
+			border-radius: 0px;
+			background-color: $default_brown;
+		}
+		.ui-state-default {
+			top: -5px;
+			width: 6px;
+			margin: 0px;
+			height: 18px;
+			border: none;
+			outline: none;
+			border-radius: 0;
+			background-color: $default_brown;
+		}
+		.price-text {
+			font-size: 14px;
+			font-weight: 600;
+			margin-top: 10px;
+			color: $default_color;
+			span {
+				float: left;
+				margin-right: 15px;
+			}
+			input {
+				border: none;
+				font-weight: 600;
+				color: $default_black;
+				display: inline-block;
+			}
+		}
+	}
+}
+/* pricing range - end */
+
+/* shop filter tags - start */
+.shop_filter_tags {
+	display: flex;
+	justify-content: flex-end;
+	ul {
+		margin: -5px;
+	}
+	li {
+		padding: 5px;
+	}
+	a {
+		display: block;
+		color: #908e8d;
+		line-height: 1;
+		font-size: 15px;
+		padding: 8px 15px;
+		background-color: #f6f6f6;
+		&:hover {
+			color: #ffffff;
+			background-color: $default_brown;
+		}
+	}
+}
+/* shop filter tags - end */
+/* offer section - end
+================================================== */

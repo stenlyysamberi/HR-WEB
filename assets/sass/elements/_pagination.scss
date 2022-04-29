@@ -1,0 +1,31 @@
+/* pagination - start
+================================================== */
+.pagination_nav {
+  margin: -3px;
+  margin-top: 77px;
+  li {
+    padding: 3px;
+  }
+  a {
+    height: 50px;
+    min-width: 50px;
+    display: flex;
+    font-size: 15px;
+    border-radius: 45px;
+    align-items: center;
+    color: $default_color;
+    justify-content: center;
+    background-color: #ffffff;
+  }
+  li {
+    &:hover,
+    &.active {
+      a {
+        color: #ffffff;
+        background-color: $default_brown;
+      }
+    }
+  }
+}
+/* pagination - end
+================================================== */

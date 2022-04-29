@@ -1,0 +1,27 @@
+/* chip style - start
+================================================== */
+.chip_item {
+	align-items: center;
+	display: inline-flex;
+	.chip_thumbnail {
+		width: 60px;
+		overflow: hidden;
+		margin-right: 15px;
+		border-radius: 100%;
+	}
+	.chip_name {
+		line-height: 1;
+		font-size: 15px;
+		font-weight: 500;
+		margin-bottom: 10px;
+	}
+	.chip_title {
+		display: block;
+		line-height: 1;
+		font-size: 12px;
+		font-weight: 500;
+		color: $default_brown;
+	}
+}
+/* chip style - end
+================================================== */

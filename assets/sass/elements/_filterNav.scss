@@ -1,0 +1,122 @@
+/* filter nav - start
+================================================== */
+.filters-button-group {
+  margin-bottom: 60px;
+  border-bottom: 5px solid #e4e2da;
+  li {
+    margin-bottom: -5px;
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+  button {
+    color: #8b887d;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 0px 20px;
+    position: relative;
+    padding-bottom: 30px;
+    &:before {
+      left: 15px;
+      right: 15px;
+      bottom: 0px;
+      opacity: 0;
+      content: '';
+      height: 5px;
+      position: absolute;
+      border-radius: 45px;
+      background-color: #c7a17a;
+      transition: $default_transition;
+    }
+    &:hover,
+    &.active {
+      color: $default_black;
+      &:before {
+        left: 0px;
+        right: 0px;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.filters-button-group {
+  &.style_2 {
+    border-bottom: none;
+    li {
+      margin-bottom: 0px;
+      &:not(:last-child) {
+        margin-right: 60px;
+      }
+    }
+    button {
+      padding: 0px;
+      &:before {
+        display: none;
+      }
+      &:hover,
+      &.active {
+        color: $default_black;
+      }
+    }
+  }
+}
+.text-white {
+  .filters-button-group {
+    &.style_2 {
+      button {
+        color: #aaaaaa;
+        &:hover,
+        &.active {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+.filters-button-group {
+  border-bottom: none;
+  &.style_3 {
+    background-color: #ffffff;
+    li {
+      margin: 0px;
+      &:not(:last-child) {
+        margin-right: 0px;
+      }
+    }
+    button {
+      padding: 18px 22px;
+      &:before {
+        border-radius: 0px;
+      }
+    }
+  }
+}
+
+.filters-button-group {
+  &.style_4 {
+    li {
+      margin: 0px;
+      border-bottom: 4px solid #eaeaea;
+      &:not(:last-child) {
+        margin-right: 0px;
+      }
+    }
+    button {
+      padding: 0px;
+      line-height: 1;
+      display: block;
+      padding: 18.5px 41.5px;
+      &:before {
+        display: none;
+      }
+      &:hover,
+      &.active {
+        background-color: #ffffff;
+      }
+    }
+  }
+}
+/* filter nav - end
+================================================== */

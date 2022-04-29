@@ -1,0 +1,71 @@
+/* checkout section - start
+================================================== */
+.checkout_form {
+	.form_title {
+		line-height: 1;
+		font-size: 20px;
+		margin-bottom: 35px;
+	}
+
+	.form_item {
+		input,textarea {
+			border-radius: 0px;
+			background-color: #f6f6f6;
+		}
+	}
+}
+
+.checkout_steps_nav {
+	margin-bottom: 40px;
+	padding-bottom: 35px;
+	border-bottom: 2px solid #f8faff;
+	a {
+		display: block;
+		line-height: 1;
+		font-size: 16px;
+		font-weight: 500;
+		padding-left: 30px;
+		position: relative;
+		color: $default_black;
+		&:before {
+			top: -2px;
+			left: 0px;
+			font-size: 18px;
+			font-weight: 400;
+			content: '\f111';
+			position: absolute;
+			transition: $default_transition;
+			font-family: 'Font Awesome 5 Pro';
+		}
+	}
+	li {
+		&:not(:last-child) {
+			margin-right: 30px;
+		}
+		&:hover,
+		&.active {
+			a {
+				&:before {
+					content: '\f192';
+				}
+			}
+		}
+	}
+}
+
+.checkout_form_footer {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	.total_price {
+		font-size: 20px;
+		font-weight: 500;
+		margin-right: 50px;
+		color: $default_brown;
+		strong {
+			color: $default_black;
+		}
+	}
+}
+/* checkout section - end
+================================================== */

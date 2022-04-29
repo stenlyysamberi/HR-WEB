@@ -1,0 +1,52 @@
+/* comment area - start
+================================================== */
+.comment_item {
+	&:not(:last-child) {
+		margin-bottom: 30px;
+	}
+	.comment_item {
+		padding-top: 20px;
+		padding-left: 85px;
+	}
+  .comment_thumbnail {
+    float: left;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    margin-right: 25px;
+    border-radius: 100%;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    background-color: #f6f6f6;
+  }
+  .comment_content {
+  	display: table;
+  	padding-top: 14px;
+  }
+  .comment_name {
+  	line-height: 1;
+  	font-size: 15px;
+  	font-weight: 500;
+  	margin-bottom: 5px;
+  	font-family: $body_font;
+  }
+  .comment_date {
+  	line-height: 1;
+  	display: block;
+  	font-size: 12px;
+  	margin-bottom: 15px;
+  	color: $default_brown;
+  }
+  .reply_btn {
+  	font-size: 12px;
+  	margin-top: 17px;
+  	display: inline-block;
+  	color: $default_black;
+  	&:hover {
+  		color: $default_brown;
+  	}
+  }
+}
+/* comment area - end
+================================================== */
