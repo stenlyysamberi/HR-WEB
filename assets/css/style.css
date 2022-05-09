@@ -32,6 +32,9 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.text-coklat{
+  color: #C7A17A;
+}
 .body_wrap {
   overflow: hidden;
   position: relative;
