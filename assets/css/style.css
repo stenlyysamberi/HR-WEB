@@ -87,6 +87,15 @@ textarea:active {
   outline: none;
 }
 
+.bg {
+  color: #ffffff;
+  text-align: center;
+  height: 313px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;}
+
 img:not([draggable]),
 embed,
 object,
