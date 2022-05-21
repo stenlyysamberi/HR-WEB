@@ -1292,49 +1292,14 @@
                 </div>
               </div>
 
-              <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="col-lg-3 col-md-4 col-sm-6 ">
                 <div class="footer_widget footer_recent_post wow fadeInUp" data-wow-delay=".4s">
                   <h3 class="footer_widget_title text-uppercase">POSTINGAN INSTAGRAM</h3>
 
-                  <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                      <a class="img-responsive" id="recent_post" href="#"></a>
-                    </div>
-                  </div>
+                  <div id="recent_post" class="row"></div>
 
+                  
 
-                  <!-- <div class="recent_post"> -->
-                   
-                     <!--
-                    <a class="item_image" href="#">
-                      <img src="assets/images/recent_post/image 9.png" alt="image_not_found">
-                    </a>
-
-                    <a class="item_image" href="#">
-                      <img src="assets/images/recent_post/image 10.png" alt="image_not_found">
-                    </a> -->
-                    <!-- <div class="item_content">
-                      <h4 class="item_title">
-                        <a href="blog_details.html">Best Smell of Americano Coffee Trins</a>
-                      </h4>
-                      <span class="post_date text-uppercase">December 30 - 2021</span>
-                    </div> -->
-                  <!-- </div> -->
-
-                  <!-- <div class="recent_post">
-                    <a class="item_image" href="#">
-                      <img src="assets/images/recent_post/image 11.png" alt="image_not_found">
-                    </a>
-
-                    <a class="item_image" href="#">
-                      <img src="assets/images/recent_post/image 12.png" alt="image_not_found">
-                    </a>
-
-                    <a class="item_image" href="#">
-                      <img src="assets/images/recent_post/image 13.png" alt="image_not_found">
-                    </a>
-                    
-                  </div> -->
                 </div>
               </div>
             </div>
@@ -1363,12 +1328,14 @@
    <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
    <script type="text/javascript">
    var userFeed = new Instafeed({
-     get: 'stenly.samberi',
-     target: "recent_post",
-       resolution: 'low_resolution',
-       limit:6,
-       sort:false,
-       accessToken: 'IGQVJVbVRBT0U3OFhKaWZAMUUYxRnNFZATBiNVVxOGhmWVpXb3Q0UEtjMWc3QWw2amljTklBNnpfdHdaWGNlNEI0NjhYc2doY0FDWFNlSmlIQ2l2Q3FMcHM3bHhRMmVNN2pCYUk4aTVoTklNd1VoRG5VTAZDZD'
+        get: 'stenly.samberi',
+        target: "recent_post",
+        accessToken: 'IGQVJVbVRBT0U3OFhKaWZAMUUYxRnNFZATBiNVVxOGhmWVpXb3Q0UEtjMWc3QWw2amljTklBNnpfdHdaWGNlNEI0NjhYc2doY0FDWFNlSmlIQ2l2Q3FMcHM3bHhRMmVNN2pCYUk4aTVoTklNd1VoRG5VTAZDZD',
+        resolution: 'low_resolution',
+        limit:6,
+        sort:false,
+        template:'<div class="col-lg-4 col-ms-4 col-md-4 gambar-ig gallery"><a href="{{ image }}" title="{{ caption }}" target="_blank"><img src="{{ image }}" alt="{{ caption }}" class="img-fluid"></a></div>'
+        
    });
    userFeed.run();
    </script>

@@ -96,6 +96,10 @@ textarea:active {
   background-repeat: no-repeat;
   background-size: cover;}
 
+  .gambar-ig img{
+      margin-bottom: 10px;
+  }
+
 img:not([draggable]),
 embed,
 object,
